@@ -13,10 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\screen">
+      <UniqueIdentifier>{cf76ee8c-d099-47a3-9a2d-4150080c2358}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="menu_screen.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="gotoxy.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="setting.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="print_title.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="key_control.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="print_explanation.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="screen.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gotoxy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="setting.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="key_control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
