@@ -39,6 +39,18 @@
     <ClCompile Include="print_explanation.c">
       <Filter>소스 파일\screen</Filter>
     </ClCompile>
+    <ClCompile Include="print_field.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="player.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="play.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="textcolor.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="screen.h">
@@ -51,6 +63,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="key_control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="play.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="textcolor.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

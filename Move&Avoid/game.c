@@ -7,11 +7,14 @@
 int main() {
 	int start;
 	setting();
-
+	
 	start = menu_screen();
 
 	if (start == 1) {
-
+		print_field();
+		printf("\n");
+		player();
+		while (1);
 	}
 	else if (start == 2) {
 
@@ -20,6 +23,7 @@ int main() {
 		system("cls");
 		return 0;
 	}
+
 
 	return 0;
 }
