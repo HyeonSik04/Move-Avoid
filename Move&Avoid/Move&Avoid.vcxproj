@@ -133,6 +133,7 @@
     <ClCompile Include="menu_screen.c" />
     <ClCompile Include="play.c" />
     <ClCompile Include="player.c" />
+    <ClCompile Include="print_empty.c" />
     <ClCompile Include="print_explanation.c" />
     <ClCompile Include="print_field.c" />
     <ClCompile Include="print_title.c" />

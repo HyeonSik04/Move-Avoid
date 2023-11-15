@@ -51,6 +51,9 @@
     <ClCompile Include="textcolor.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="print_empty.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="screen.h">

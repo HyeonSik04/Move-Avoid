@@ -1,4 +1,5 @@
 ﻿#include <stdio.h>
+#include <windows.h>
 #include <conio.h>
 
 #define UP 0

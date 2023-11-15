@@ -2,11 +2,8 @@
 #include "gotoxy.h"
 #include "textcolor.h"
 
-void player() {
-	int x, y;
-	x = 28, y = 20;
-
+int player(int x, int y) {
 	gotoxy(x, y);
 	textcolor(2);
-	printf("  ");
+	printf("0");
 }

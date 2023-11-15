@@ -31,7 +31,7 @@ int menu_screen() {
                 gotoxy(x, y);
                 printf(">");
             }
-            else if (key == SELECT) {   //게임시작 버튼 선택시 3반환
+            else if (key == SELECT) {   //게임시작 버튼 선택시 1반환
                 return 1;
             }
         }
@@ -66,8 +66,8 @@ int menu_screen() {
                 gotoxy(x, y);
                 printf(">");
             }
-            else if (key == SELECT) {   //게임종료 버튼 선택시 3반환
-                return 3;
+            else if (key == SELECT) {   //게임종료 버튼 선택시 0반환
+                return 0;
             }
         }
     }

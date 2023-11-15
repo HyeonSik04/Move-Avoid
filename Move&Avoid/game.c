@@ -1,8 +1,8 @@
 ﻿#include <stdio.h>
 #include <windows.h>
-#include "gotoxy.h"
 #include "setting.h"
 #include "screen.h"
+#include "play.h"
 
 int main() {
 	int start;
@@ -10,18 +10,13 @@ int main() {
 	
 	start = menu_screen();
 
-	if (start == 1) {
-		print_field();
-		printf("\n");
-		player();
-		while (1);
-	}
-	else if (start == 2) {
-
-	}
-	else if (start == 3) {
+	if (start == 0) {
 		system("cls");
 		return 0;
+	}
+	else if (start == 1) {
+		play();
+		while (1);
 	}
 
 
