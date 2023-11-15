@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\pattern">
       <UniqueIdentifier>{7c62c5d0-1ee9-4e20-b0db-80aa4a5f0952}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\player">
+      <UniqueIdentifier>{041a88ad-8f27-4952-93e8-f64f4cbf38dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.c">
@@ -42,12 +45,6 @@
     <ClCompile Include="print_field.c">
       <Filter>소스 파일\screen</Filter>
     </ClCompile>
-    <ClCompile Include="player.c">
-      <Filter>소스 파일\screen</Filter>
-    </ClCompile>
-    <ClCompile Include="play.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="textcolor.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -56,6 +53,27 @@
     </ClCompile>
     <ClCompile Include="pattern.c">
       <Filter>소스 파일\pattern</Filter>
+    </ClCompile>
+    <ClCompile Include="gameover.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="play.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="player_control.c">
+      <Filter>소스 파일\player</Filter>
+    </ClCompile>
+    <ClCompile Include="print_player.c">
+      <Filter>소스 파일\player</Filter>
+    </ClCompile>
+    <ClCompile Include="move_player.c">
+      <Filter>소스 파일\player</Filter>
+    </ClCompile>
+    <ClCompile Include="transx.c">
+      <Filter>소스 파일\player</Filter>
+    </ClCompile>
+    <ClCompile Include="transy.c">
+      <Filter>소스 파일\player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +93,12 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="pattern.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="player_control.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="transxy.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,7 +1,10 @@
 ﻿#include <stdio.h>
+#include <windows.h>
 #include "gotoxy.h"
 
 void print_title() {
+	system("cls");
+
 	int x = 2, y = 1;
 	gotoxy(x, y);
 	printf(" 7MMM.     ,MMF                                      ,gM\"\"bg\n");

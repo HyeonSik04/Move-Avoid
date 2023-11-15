@@ -2,18 +2,17 @@
 #include <windows.h>
 #include "gotoxy.h"
 #include "screen.h"
+#include "play.h"
 
 int menu_screen() {
-    system("cls");
-
     print_title();
 
-    int time, x = 34, y = 24;
+    int time, over_num, x = 34, y = 24;
 
     gotoxy(x, y);
     printf(">");
 
-    time = 100;
+    time = 120;
 
     while (1) {
         if (y == 24) {              //게임시작 버튼 위치
@@ -25,9 +24,25 @@ int menu_screen() {
                 printf(">");
                 Sleep(time);
             }
-            else if (GetAsyncKeyState(VK_RETURN) & 0x8000) {   //게임시작 버튼 선택시 1반환
+            else if (GetAsyncKeyState(VK_RETURN) & 0x8000) {   //게임시작 선택시 play 함수 호출
                 Sleep(time);
-                return 1;
+                
+                while (1) {
+                    over_num = play();
+
+                    if (over_num == 1) {      //다시하기 선택시 
+                        system("cls");
+                        Sleep(2000);
+                        continue;
+                    }
+                    else if (over_num == 2) {       //메인메뉴 선택시
+                        break;
+                    }
+                }
+                print_title();
+                gotoxy(x, y);
+                printf(">");
+                continue;
             }
         }
         else if (y == 26) {         //게임설명 버튼 위치
@@ -47,12 +62,12 @@ int menu_screen() {
                 printf(">");
                 Sleep(time);
             }
-            else if (GetAsyncKeyState(VK_RETURN) & 0x8000) {   //게임메뉴 버튼 선택시 메뉴 화면으로 전환
+            else if (GetAsyncKeyState(VK_RETURN) & 0x8000) {   //게임설명 선택시 게임설명 화면으로 전환
                 print_explanation();
+                print_title();
                 y = 26;
                 gotoxy(x, y);
                 printf(">");
-                Sleep(time);
                 continue;       //메뉴화면 종료시 while문 처음으로 감
             }
         }
@@ -65,10 +80,12 @@ int menu_screen() {
                 printf(">");
                 Sleep(time);
             }
-            else if (GetAsyncKeyState(VK_RETURN) & 0x8000) {   //게임종료 버튼 선택시 0반환
+            else if (GetAsyncKeyState(VK_RETURN) & 0x8000) {   //게임종료 선택시 break
                 Sleep(time);
-                return 0;
+                break;
             }
         }
     }
+    
+    return 0;
 }

@@ -16,10 +16,7 @@ int print_explanation() {
 		printf("이게 어렵냐? ㅋ");
 
 		while (1) {
-		if (GetAsyncKeyState(VK_BACK) & 0x8000) {
-			system("cls");
-			print_title();
-			Sleep(100);
+		if (GetAsyncKeyState(VK_BACK) & 0x8000) {	//BackSpace 누를 시 돌아감
 			return 0;
 		}
 	}

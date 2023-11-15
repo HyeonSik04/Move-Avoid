@@ -128,15 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.c" />
+    <ClCompile Include="gameover.c" />
     <ClCompile Include="gotoxy.c" />
     <ClCompile Include="menu_screen.c" />
+    <ClCompile Include="move_player.c" />
     <ClCompile Include="pattern.c" />
     <ClCompile Include="play.c" />
-    <ClCompile Include="player.c" />
+    <ClCompile Include="print_player.c" />
+    <ClCompile Include="player_control.c" />
     <ClCompile Include="print_empty.c" />
     <ClCompile Include="print_explanation.c" />
     <ClCompile Include="print_field.c" />
     <ClCompile Include="print_title.c" />
+    <ClCompile Include="transx.c" />
+    <ClCompile Include="transy.c" />
     <ClCompile Include="setting.c" />
     <ClCompile Include="textcolor.c" />
   </ItemGroup>
@@ -144,6 +149,8 @@
     <ClInclude Include="gotoxy.h" />
     <ClInclude Include="pattern.h" />
     <ClInclude Include="play.h" />
+    <ClInclude Include="player_control.h" />
+    <ClInclude Include="transxy.h" />
     <ClInclude Include="screen.h" />
     <ClInclude Include="setting.h" />
     <ClInclude Include="textcolor.h" />
