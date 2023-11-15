@@ -129,8 +129,8 @@
   <ItemGroup>
     <ClCompile Include="game.c" />
     <ClCompile Include="gotoxy.c" />
-    <ClCompile Include="key_control.c" />
     <ClCompile Include="menu_screen.c" />
+    <ClCompile Include="pattern.c" />
     <ClCompile Include="play.c" />
     <ClCompile Include="player.c" />
     <ClCompile Include="print_empty.c" />
@@ -142,7 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gotoxy.h" />
-    <ClInclude Include="key_control.h" />
+    <ClInclude Include="pattern.h" />
     <ClInclude Include="play.h" />
     <ClInclude Include="screen.h" />
     <ClInclude Include="setting.h" />

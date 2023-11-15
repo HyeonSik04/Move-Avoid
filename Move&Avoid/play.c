@@ -7,78 +7,65 @@
 #include "textcolor.h"
 
 int play() {
-	int x, y;
+	int time, x, y;
 
 	print_field();
 	printf("\n");
 
-	x = 18, y = 7;
+	x = 39, y = 17;
 	player(x,y);
+
+	time = 100;
 
 	while (1) {
 		if (GetAsyncKeyState(VK_UP) & 0x8000) {
-			if (y == 7) {
+			if (y == 9) {
 				continue;
 			}
-			print_empty();
-			y--;
+			print_empty(x, y);
+			y -= 4;
 			player(x, y);
+			Sleep(time);
 		}
-		if (GetAsyncKeyState(VK_DOWN) & 0x8000) {
-			if (y == 27) {
+		else if (GetAsyncKeyState(VK_DOWN) & 0x8000) {
+			if (y == 25) {
 				continue;
 			}
-			print_empty();
-			y++;
+			print_empty(x, y);
+			y += 4;
 			player(x, y);
+			Sleep(time);
 		}
-		if (GetAsyncKeyState(VK_LEFT) & 0x8000) {
-			if (x == 18) {
+		else if (GetAsyncKeyState(VK_LEFT) & 0x8000) {
+			if (x == 23) {
 				continue;
 			}
-			print_empty();
-			x--;
+			print_empty(x, y);
+			x -= 8;
 			player(x, y);
+			Sleep(time);
 		}
-		if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {
-			if (x == 61) {
+		else if (GetAsyncKeyState(VK_RIGHT) & 0x8000) {
+			if (x == 55) {
 				continue;
 			}
-			print_empty();
-			x++;
+			print_empty(x, y);
+			x += 8;
 			player(x, y);
+			Sleep(time);
 		}
-		/*
-		if (key_control() == UP) {
-			if (y == 7) {
-				continue;
-			}
-			gotoxy(x,y);
-			printf(" ");
-			y--;
-			player(x,y);
-		}
-		else if (key_control() == DOWN) {
-			if (y == 27) {
-				continue;
-			}
-			gotoxy(x, y);
-			printf(" ");
-			y++;
-			player(x, y);
-		}
-		else if (key_control() == LEFT) {
-			gotoxy(x, y);
-			printf(" ");
-			x--;
-			player(x, y);
-		}
-		else if (key_control() == RIGHT) {
-			gotoxy(x, y);
-			printf(" ");
-			x++;
-			player(x, y);
-		}
-		*/
 	}
+
+	return 0;
 }
+
+/*
+23, 9
+31, 9
+39, 9
+47, 9
+55, 9
+
+
+
+*/

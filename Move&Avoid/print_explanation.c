@@ -2,9 +2,6 @@
 #include <windows.h>
 #include "screen.h"
 #include "gotoxy.h"
-#include "key_control.h"
-
-#define CANCEL 5
 
 int print_explanation() {
 	system("cls");
@@ -19,9 +16,10 @@ int print_explanation() {
 		printf("이게 어렵냐? ㅋ");
 
 		while (1) {
-		if (key_control() == CANCEL) {
+		if (GetAsyncKeyState(VK_BACK) & 0x8000) {
 			system("cls");
 			print_title();
+			Sleep(100);
 			return 0;
 		}
 	}

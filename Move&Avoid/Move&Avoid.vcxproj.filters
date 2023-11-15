@@ -16,6 +16,9 @@
     <Filter Include="소스 파일\screen">
       <UniqueIdentifier>{cf76ee8c-d099-47a3-9a2d-4150080c2358}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\pattern">
+      <UniqueIdentifier>{7c62c5d0-1ee9-4e20-b0db-80aa4a5f0952}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.c">
@@ -32,9 +35,6 @@
     </ClCompile>
     <ClCompile Include="print_title.c">
       <Filter>소스 파일\screen</Filter>
-    </ClCompile>
-    <ClCompile Include="key_control.c">
-      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="print_explanation.c">
       <Filter>소스 파일\screen</Filter>
@@ -54,6 +54,9 @@
     <ClCompile Include="print_empty.c">
       <Filter>소스 파일\screen</Filter>
     </ClCompile>
+    <ClCompile Include="pattern.c">
+      <Filter>소스 파일\pattern</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="screen.h">
@@ -65,13 +68,13 @@
     <ClInclude Include="setting.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="key_control.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="play.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="textcolor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pattern.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
