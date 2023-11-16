@@ -75,6 +75,9 @@
     <ClCompile Include="transy.c">
       <Filter>소스 파일\player</Filter>
     </ClCompile>
+    <ClCompile Include="field_array.c">
+      <Filter>소스 파일\screen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="screen.h">

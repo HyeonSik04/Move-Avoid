@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="field_array.c" />
     <ClCompile Include="game.c" />
     <ClCompile Include="gameover.c" />
     <ClCompile Include="gotoxy.c" />
