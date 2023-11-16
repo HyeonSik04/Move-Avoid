@@ -13,6 +13,4 @@ void move_player(int field[][5], int x, int y) {
 			}
 		}
 	}
-
-	print_empty(transx(x), transy(y));
 }
